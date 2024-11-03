@@ -3,97 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>LDS - Liam's Design Solutions</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Royal Flush - Premium Toilets</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .products {
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1>LDS</h1>
-            <p>Liam's Design Solutions</p>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Royal Flush</h1>
+        <p>Premium Toilets for Your Home</p>
     </header>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Welcome to Liam's Design Solutions</h1>
-            <p>We bring your vision to life with stunning design solutions.</p>
-            <button onclick="scrollToSection('services')">Explore Our Services</button>
-        </div>
-    </section>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <section id="services" class="content">
-        <h2>Our Services</h2>
-        <div class="services-container">
-            <div class="service-box">
-                <h3>Web Design</h3>
-                <p>Custom and responsive web design solutions tailored to your brand.</p>
-            </div>
-            <div class="service-box">
-                <h3>Graphic Design</h3>
-                <p>Creative logos, branding, and marketing materials to elevate your business.</p>
-            </div>
-            <div class="service-box">
-                <h3>UI/UX Design</h3>
-                <p>Intuitive and user-centered designs for a seamless digital experience.</p>
-            </div>
+    <div class="hero">
+        <div>
+            <h2>Experience Comfort Like Never Before</h2>
+            <p>Discover our range of premium toilets</p>
         </div>
-    </section>
+    </div>
 
-    <section id="portfolio" class="content">
-        <h2>Portfolio</h2>
-        <div class="portfolio-grid">
-            <div class="portfolio-item">
-                <img src="img/project1.jpg" alt="Project 1">
-                <h3>Project 1</h3>
-            </div>
-            <div class="portfolio-item">
-                <img src="img/project2.jpg" alt="Project 2">
-                <h3>Project 2</h3>
-            </div>
-            <div class="portfolio-item">
-                <img src="img/project3.jpg" alt="Project 3">
-                <h3>Project 3</h3>
-            </div>
+    <section class="products">
+        <div class="product-card">
+            <img src="toilet1.jpg" alt="Classic Toilet">
+            <h3>Classic Model</h3>
+            <p>Traditional design with modern features</p>
+            <p>$299.99</p>
+            <button>Add to Cart</button>
         </div>
-    </section>
 
-    <section id="contact" class="content">
-        <h2>Contact Us</h2>
-        <form id="contact-form" action="#">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-            <button type="submit">Send Message</button>
-        </form>
+        <div class="product-card">
+            <img src="toilet2.jpg" alt="Smart Toilet">
+            <h3>Smart Toilet</h3>
+            <p>Built-in bidet and heating features</p>
+            <p>$699.99</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="toilet3.jpg" alt="Luxury Toilet">
+            <h3>Luxury Model</h3>
+            <p>Premium features with voice control</p>
+            <p>$999.99</p>
+            <button>Add to Cart</button>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 LDS - Liam's Design Solutions. All rights reserved.</p>
-        <ul class="social-media">
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">LinkedIn</a></li>
-        </ul>
-    </footer>
-
-    <script src="script.js
